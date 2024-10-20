@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy birthday</title>
+    <title>Happy womenday</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -19,6 +19,13 @@
     ></script>
   </head>
   <body>
+    <audio
+      id="background-music"
+      src="./images/ytmp3free.cc_shane-filan-beautiful-in-white-official-video-youtubemp3free.org.mp3"
+      autoplay
+      muted
+      loop
+    ></audio>
     <div id="wrapper">
       <div class="flag__birthday">
         <img src="./images/1.png" alt="" width="350" class="flag__left" />
@@ -181,6 +188,11 @@
     </div>
   </body>
   <script>
+    document.addEventListener("click", function () {
+      let music = document.getElementById("background-music");
+      music.muted = false;
+    });
+
     let datetxt = "20/10/2024";
     let datatxtletter =
       "20/10 này con gửi lời chúc đến 2 người phụ nữ tuyệt vời của gia đình. Chúc mẹ và chị có thật nhiều sức khỏe, luôn vui vẻ và hạnh phúc. Cảm ơn mẹ đã luôn dành những điều tốt đẹp và tình yêu thương cho con, cảm ơn chị đã luôn dậy bảo em trong suốt thời gian qua. HIHI  💕";
